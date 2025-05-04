@@ -7,7 +7,6 @@ const VehicleTypeSelection = () => {
     const [selectedValue, setSelectedValue] = useState('');
 
     const handleChange = (event) => {
-        console.log('selected vehicle type: ', event.target.value);
         setSelectedValue(event.target.value);
     };
 
