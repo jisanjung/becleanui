@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import MobileNav from './MobileNav'
 import { HEADER_BACKGROUND_COLOR } from '../constants'
 import { GiHamburgerMenu } from "react-icons/gi";
+import becleanLogo from '../assets/beclean_logo.png';
 
 const Header = () => {
 
@@ -19,7 +20,7 @@ const Header = () => {
           <div style={{
             width: '50px'
           }}>
-            <img src='./src/assets/beclean_logo.png'/>
+            <img src={becleanLogo} alt='Beclean Logo'/>
           </div>
           <p className='font-bold text-lg'>beclean</p>
         </div>
