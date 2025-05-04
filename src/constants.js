@@ -1,0 +1,1 @@
+export const HEADER_BACKGROUND_COLOR = '#363434';
