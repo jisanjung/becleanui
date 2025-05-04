@@ -1,1 +1,2 @@
 export const HEADER_BACKGROUND_COLOR = '#363434';
+export const BECLEAN_PRIMARY_BLUE_COLOR = '#43BDD5';

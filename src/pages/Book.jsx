@@ -1,9 +1,12 @@
 import React from 'react'
+import VehicleTypeSelection from '../components/VehicleTypeSelection'
 
 const Book = () => {
   return (
     <main>
-        booking
+      <div className='container px-4'>
+        <VehicleTypeSelection/>
+      </div>
     </main>
   )
 }
