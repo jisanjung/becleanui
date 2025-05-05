@@ -1,30 +1,38 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { IoChevronDownSharp } from "react-icons/io5";
 
 const DropdownInfo = ({ title, description }) => {
 
   const [openDropdown, setOpenDropdown] = useState(false);
+  const contentRef = useRef(null);
+  const [contentHeight, setContentHeight] = useState(0);
+
+  useEffect(() => {
+    setContentHeight(contentRef?.current?.scrollHeight);
+  }, []);
 
   return (
     <div className='py-4 border-b-1 border-gray-300'>
-      <div className='flex justify-between items-center'>
+      <div className='flex justify-between items-center'
+        onClick={() => setOpenDropdown(!openDropdown)}
+      >
         <p className='font-bold'>{title}</p>
         <button>
           <IoChevronDownSharp className='text-3xl transition-all'
-            onClick={() => setOpenDropdown(!openDropdown)}
             style={{
               transform: openDropdown ? 'rotate(180deg)' : 'none'
             }}
           />
         </button>
       </div>
-      {
-        (description && openDropdown) &&
-        (<div className='pt-4'
-        >
-          <p>{description}</p>
-        </div>)
-      }
+      <div className='transition-all overflow-hidden'
+        ref={contentRef}
+        style={{
+          height: openDropdown ? `${contentHeight}px` : '0px',
+        }}
+      >
+        <p className='mt-4'>{description}</p>
+      </div>
     </div>
   )
 }

@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const MobileNav = ({ menuToggled }) => {
+
+  const menuContentRef = useRef(null);
+  const [menuContentHeight, setMenuContentHeight] = useState(0);
+
+  useEffect(() => {
+    setMenuContentHeight(menuContentRef?.current?.scrollHeight);
+  }, []);
+
   return (
-    <nav className={`transition-all ${menuToggled ? 'py-4 h-auto' : 'h-0 p-0' }`}>
-        <ul className={`${menuToggled ? 'block' : 'hidden'}`}>
+    <nav className={`transition-all overflow-hidden`}
+      ref={menuContentRef}
+      style={{
+        height: menuToggled ? `${menuContentHeight}px` : '0px',
+      }}
+    >
+        <ul className='my-4'>
             <li className='pb-4'><a href="#homeSection">Home</a></li>
             <li className='pb-4'><a href="#servicesSection">Services</a></li>
             <li className='pb-4'><a href="#pricingSection">Pricing</a></li>
