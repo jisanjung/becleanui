@@ -8,7 +8,7 @@ const OptionSelectionContent = ({ title, price, description }) => {
             <small>{price}</small>
         </div>
         {description &&
-            <p>{description}</p>
+            <div>{description}</div>
         }
     </div>
   )
