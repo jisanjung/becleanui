@@ -1,5 +1,5 @@
 import React from 'react'
-import VehicleTypeSelection from '../components/VehicleTypeSelection';
+import VehicleTypeRadio from '../components/VehicleTypeRadio';
 import sedan1 from '../assets/sedan1.jpg';
 
 const VehicleTypeSection = () => {
@@ -10,7 +10,7 @@ const VehicleTypeSection = () => {
         <div className='bg-gray-200 mb-4 h-40'>
           <img src={sedan1} alt='Sedan 1' className='w-full h-full object-cover'/>
         </div>
-        <VehicleTypeSelection/>
+        <VehicleTypeRadio/>
     </section>
   )
 }

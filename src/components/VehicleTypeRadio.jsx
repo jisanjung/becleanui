@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import RadioOption from './RadioOption';
 import OptionSelectionContent from './OptionSelectionContent';
 
-const VehicleTypeSelection = () => {
+const VehicleTypeRadio = () => {
 
     const [selectedValue, setSelectedValue] = useState('');
 
@@ -55,4 +55,4 @@ const VehicleTypeSelection = () => {
   )
 }
 
-export default VehicleTypeSelection
+export default VehicleTypeRadio

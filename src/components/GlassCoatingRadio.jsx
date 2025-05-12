@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import RadioOption from './RadioOption';
 import OptionSelectionContent from './OptionSelectionContent';
 
-const DropOffSelection = () => {
+const GlassCoatingRadio = () => {
 
     const [selectedValue, setSelectedValue] = useState('');
 
@@ -14,26 +14,27 @@ const DropOffSelection = () => {
     <div>
         <RadioOption
             label={<OptionSelectionContent 
-                title='Drop-Off'
-                price='Free'
+                title={<span>Glass Dedicated<br/> Ceramic Coating</span>}
+                price='$200'
                 description={
-                    <p className='mt-4 w-4/5'>
-                        Remove the headache around scheduling the right time to pick-up your car. 
-                        As soon as the coating cures, we drop it off for you.
-                    </p>
+                    <div className='mt-4 pt-4 border-t-1 border-black'>
+                        <p className='mb-4 w-4/5'>Ceramic coating made specifically for windows</p>
+                        <p className='mb-4 w-4/5'>Higher coating longevity and protection</p>
+                        <p className='w-4/5'>Increased performance in snow and rain</p>
+                    </div>
                 }
             />}
-            name='dropOff'
-            value='drop_off'
-            checked={selectedValue === 'drop_off'}
+            name='glassCoating'
+            value='glass_ceramic_coating'
+            checked={selectedValue === 'glass_ceramic_coating'}
             onChange={handleChange}
             className='mb-3'
         />
         <RadioOption
             label={<OptionSelectionContent 
-                title='No Drop-Off'
+                title='No Glass Ceramic Coating'
             />}
-            name='dropOff'
+            name='glassCoating'
             value='none'
             checked={selectedValue === 'none'}
             onChange={handleChange}
@@ -43,4 +44,4 @@ const DropOffSelection = () => {
   )
 }
 
-export default DropOffSelection
+export default GlassCoatingRadio
