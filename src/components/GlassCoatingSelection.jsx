@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import RadioOption from './RadioOption';
 import OptionSelectionContent from './OptionSelectionContent';
 
-const GlassCoatingSection = () => {
+const GlassCoatingSelection = () => {
 
     const [selectedValue, setSelectedValue] = useState('');
 
@@ -44,4 +44,4 @@ const GlassCoatingSection = () => {
   )
 }
 
-export default GlassCoatingSection
+export default GlassCoatingSelection
