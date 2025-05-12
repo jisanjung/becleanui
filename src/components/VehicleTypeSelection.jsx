@@ -21,7 +21,7 @@ const VehicleTypeSelection = () => {
             value='sedan'
             checked={selectedValue === 'sedan'}
             onChange={handleChange}
-            className='mb-4'
+            className='mb-3'
         />
         <RadioOption
             label={<OptionSelectionContent 
@@ -32,7 +32,10 @@ const VehicleTypeSelection = () => {
             value='suv'
             checked={selectedValue === 'suv'}
             onChange={handleChange}
-            className='mb-4'
+            className='mb-3'
+            styleOverrides={{
+                minHeight: '90px'
+            }}
         />
         <RadioOption
             label={<OptionSelectionContent 
@@ -43,7 +46,10 @@ const VehicleTypeSelection = () => {
             value='truck'
             checked={selectedValue === 'truck'}
             onChange={handleChange}
-            className='mb-4'
+            className='mb-3'
+            styleOverrides={{
+                minHeight: '90px'
+            }}
         />
     </div>
   )

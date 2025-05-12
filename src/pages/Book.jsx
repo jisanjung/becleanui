@@ -1,13 +1,13 @@
 import React from 'react'
-import VehicleTypeSelection from '../components/VehicleTypeSelection'
 import ButtonPrimary from '../components/ButtonPrimary'
 import DropdownInfo from '../components/DropdownInfo'
+import VehicleTypeSection from '../sections/VehicleTypeSection'
 
 const Book = () => {
   return (
     <main>
       <div className='container px-4'>
-        <VehicleTypeSelection/>
+        <VehicleTypeSection/>
         <ButtonPrimary>Book Now</ButtonPrimary>
         <DropdownInfo title='Why do I need a ceramic coating?' description='some sample text'/>
       </div>
