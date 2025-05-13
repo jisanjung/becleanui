@@ -1,9 +1,9 @@
 import React from 'react'
 import DropOffRadio from '../components/DropOffRadio'
 
-const DropOffSection = () => {
+const DropOffSection = ({ className }) => {
   return (
-    <section className='py-4'>
+    <section className={`py-4 ${className}`}>
         <h1 className='font-bold text-4xl mb-4'>Free Drop Off After Coating</h1>
         <DropOffRadio/>
     </section>
