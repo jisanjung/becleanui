@@ -22,6 +22,9 @@ const VehicleTypeRadio = () => {
             checked={selectedValue === 'sedan'}
             onChange={handleChange}
             className='mb-3'
+            styleOverrides={{
+                minHeight: '90px'
+            }}
         />
         <RadioOption
             label={<OptionSelectionContent 

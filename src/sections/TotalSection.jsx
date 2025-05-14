@@ -8,8 +8,10 @@ const TotalSection = ({ className }) => {
   return (
     <section className={`py-4 bg-gray-100 ${className}`}>
         <h1 className='font-bold text-4xl mb-4'>Your ceramic coating. <span className='text-gray-500'>The Way You Want It.</span></h1>
-        <div className='h-48 my-8'>
-            <img src={totalSectionCar} alt='Display Car' className='w-full h-full object-cover'/>
+        <div className='flex justify-center'>
+            <div className='w-80 sm:w-96 h-48 my-8'>
+                <img src={totalSectionCar} alt='Display Car' className='w-full h-full object-cover'/>
+            </div>
         </div>
         <ul className='mb-6 text-lg'>
             <li className='flex items-center'>
