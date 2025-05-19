@@ -8,7 +8,7 @@ const FaqSection = ({ className }) => {
     const [openDropdown, setOpenDropdown] = useState(true);
 
   return (
-    <section className={`py-4 pb-14 ${className}`}>
+    <section className={`py-4 md:pt-6 pb-14 ${className}`}>
         <div className='flex justify-between items-center border-b-1 border-gray-300 pb-4'
             onClick={() => setOpenDropdown(!openDropdown)}
         >

@@ -11,13 +11,13 @@ import StickyVehicleType from '../components/StickyVehicleType'
 const Book = () => {
   return (
     <main>
-      <div className='wrapper'>
-        <div className='lg:flex'>
-          <div className='px-4 md:px-10 pt-4'>
+      <div>
+        <div className='wrapper lg:flex'>
+          <div className='px-4 md:px-10 lg:pr-0 p-4 md:pt-8 lg:w-3/5'>
             <h1 className='font-bold text-4xl'>Book a Ceramic Coating</h1>
             <StickyVehicleType/>
           </div>
-          <div>
+          <div className='lg:w-2/5 lg:mt-16'>
             <VehicleTypeSection className='px-4 md:px-10'/>
             <GlassCoatingSection className='px-4 md:px-10'/>
             <DropOffSection className='px-4 md:px-10'/>

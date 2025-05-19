@@ -8,5 +8,19 @@
     background: #369fb4;
 }
 .wrapper {
-    
+     
+}
+
+@media screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
 }

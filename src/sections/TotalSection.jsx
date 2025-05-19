@@ -6,7 +6,7 @@ import { GoShieldCheck } from "react-icons/go";
 
 const TotalSection = ({ className }) => {
   return (
-    <section className={`py-4 bg-gray-100 ${className}`}>
+    <section className={`py-4 md:py-6 bg-gray-100 ${className}`}>
         <h1 className='font-bold text-4xl mb-4'>Your ceramic coating. <span className='text-gray-500'>The Way You Want It.</span></h1>
         <div className='flex justify-center'>
             <div className='w-80 sm:w-96 h-48 my-8'>
