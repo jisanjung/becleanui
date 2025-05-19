@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const MobileNav = ({ menuToggled }) => {
+const MobileNav = ({ menuToggled, className }) => {
 
   const menuContentRef = useRef(null);
   const [menuContentHeight, setMenuContentHeight] = useState(0);
@@ -10,7 +10,7 @@ const MobileNav = ({ menuToggled }) => {
   }, []);
 
   return (
-    <nav className={`transition-all overflow-hidden`}
+    <nav className={`transition-all overflow-hidden ${className}`}
       ref={menuContentRef}
       style={{
         height: menuToggled ? `${menuContentHeight}px` : '0px',
