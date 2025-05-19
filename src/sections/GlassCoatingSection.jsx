@@ -4,7 +4,7 @@ import GlassCoatingRadio from '../components/GlassCoatingRadio';
 const GlassCoatingSection = ({ className }) => {
   return (
     <section className={`py-4 md:py-6 ${className}`}>
-        <h1 className='font-bold text-4xl mb-4'>Glass Coating. <span className='text-gray-500'>Full Ceramic Protection.</span></h1>
+        <h1 className='font-bold text-4xl mb-4 lg:text-2xl'>Glass Coating. <span className='text-gray-500'>Full Ceramic Protection.</span></h1>
         <GlassCoatingRadio/>
     </section>
   )
