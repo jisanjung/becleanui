@@ -24,8 +24,8 @@ const Book = () => {
           </div>
         </div>
         <TotalSection className='px-4 md:px-10'/>
-        <InfoSection className='px-4 md:px-10'/>
-        <FaqSection className='px-4 md:px-10'/>
+        <InfoSection className='px-4 md:px-10 wrapper'/>
+        <FaqSection className='px-4 md:px-10 wrapper'/>
       </div>
     </main>
   )
