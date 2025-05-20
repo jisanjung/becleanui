@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa6";
 
 const InfoSection = ({ className }) => {
   return (
-    <section className={`py-6 md:py-6 ${className}`}>
+    <section className={`py-6 md:py-6 lg:py-10 ${className}`}>
         <div className='mb-6 pb-6 border-b-1 border-gray-300'>
             <h1 className='font-bold text-4xl mb-6 lg:mb-10'>Ceramic Coating Information</h1>
             <div className='lg:flex'>
