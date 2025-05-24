@@ -20,14 +20,14 @@ const Header = () => {
       <div className='wrapper lg:flex lg:justify-between'>
         <div>
           <div className='flex items-center justify-between '>
-            <div className='flex items-center'>
+            <a href='/' className='flex items-center'>
               <div style={{
                 width: '50px'
               }}>
                 <img src={becleanLogo} alt='Beclean Logo'/>
               </div>
               <p className='font-bold text-lg'>beclean</p>
-            </div>
+            </a>
             <button className='lg:hidden' onClick={() => setMenuToggled(!menuToggled)}>
               <GiHamburgerMenu className='text-3xl'/>
             </button>
@@ -36,7 +36,9 @@ const Header = () => {
           <DesktopNav className='hidden lg:block'/>
         </div>
         <div className='hidden lg:flex items-center'>
-          <ButtonPrimary>Book an Appointment</ButtonPrimary>
+          <a href='/book'>
+            <ButtonPrimary>Book an Appointment</ButtonPrimary>
+          </a>
         </div>
       </div>
     </header>

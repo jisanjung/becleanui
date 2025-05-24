@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 
 const MobileNav = ({ menuToggled, className }) => {
 
@@ -17,11 +17,11 @@ const MobileNav = ({ menuToggled, className }) => {
       }}
     >
         <ul className='my-4'>
-            <li className='pb-4'><a href="#homeSection">Home</a></li>
-            <li className='pb-4'><a href="#servicesSection">Services</a></li>
-            <li className='pb-4'><a href="#pricingSection">Pricing</a></li>
-            <li className='pb-4'><a href="#contactSection">Contact</a></li>
-            <li><a href="#ourStorySection">Our Story</a></li>
+            <li className='pb-4'><a href="/#homeSection">Home</a></li>
+            <li className='pb-4'><a href="/#servicesSection">Services</a></li>
+            <li className='pb-4'><a href="/#pricingSection">Pricing</a></li>
+            <li className='pb-4'><a href="/#contactSection">Contact</a></li>
+            <li><a href="/#ourStorySection">Our Story</a></li>
         </ul>
     </nav>
   )
