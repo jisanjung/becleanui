@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import RadioOption from './RadioOption';
 import OptionSelectionContent from './OptionSelectionContent';
+import { useStoreActions, useStoreState } from 'easy-peasy';
 
 const VehicleTypeRadio = () => {
 
-    const [selectedValue, setSelectedValue] = useState('');
+    const setVehicleType = useStoreActions(actions => actions.setVehicleType);
+    const vehicleTypeSelected = useStoreState(state => state.vehicleTypeSelected);
 
     const handleChange = (event) => {
-        setSelectedValue(event.target.value);
+        setVehicleType(event.target.value);
     };
 
   return (
@@ -19,7 +21,7 @@ const VehicleTypeRadio = () => {
             />}
             name='vehicleType'
             value='sedan'
-            checked={selectedValue === 'sedan'}
+            checked={vehicleTypeSelected === 'sedan'}
             onChange={handleChange}
             className='mb-3'
             styleOverrides={{
@@ -33,7 +35,7 @@ const VehicleTypeRadio = () => {
             />}
             name='vehicleType'
             value='suv'
-            checked={selectedValue === 'suv'}
+            checked={vehicleTypeSelected === 'suv'}
             onChange={handleChange}
             className='mb-3'
             styleOverrides={{
@@ -47,7 +49,7 @@ const VehicleTypeRadio = () => {
             />}
             name='vehicleType'
             value='truck'
-            checked={selectedValue === 'truck'}
+            checked={vehicleTypeSelected === 'truck'}
             onChange={handleChange}
             className='mb-3'
             styleOverrides={{

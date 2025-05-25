@@ -4,17 +4,23 @@ import Home from './pages/Home';
 import Book from './pages/Book';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { StoreProvider, createStore } from 'easy-peasy';
+import { globalState } from './model';
 
 function App() {
 
+  const store = createStore(globalState);
+
   return (
     <>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/book" element={<Book/>}/>
-      </Routes>
-      <Footer/>
+      <StoreProvider store={store}>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/book" element={<Book/>}/>
+        </Routes>
+        <Footer/>
+      </StoreProvider>
     </>
   )
 }

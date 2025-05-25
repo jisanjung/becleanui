@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import RadioOption from './RadioOption';
 import OptionSelectionContent from './OptionSelectionContent';
+import { useStoreActions, useStoreState } from 'easy-peasy';
 
 const DropOffRadio = () => {
 
-    const [selectedValue, setSelectedValue] = useState('');
+    const setDropOffSelection = useStoreActions(actions => actions.setDropOffSelection);
+    const dropOffSelected = useStoreState(state => state.dropOffSelected);
 
     const handleChange = (event) => {
-        setSelectedValue(event.target.value);
+        setDropOffSelection(event.target.value);
     };
 
   return (
@@ -25,7 +27,7 @@ const DropOffRadio = () => {
             />}
             name='dropOff'
             value='drop_off'
-            checked={selectedValue === 'drop_off'}
+            checked={dropOffSelected === 'drop_off'}
             onChange={handleChange}
             className='mb-3'
         />
@@ -35,7 +37,7 @@ const DropOffRadio = () => {
             />}
             name='dropOff'
             value='none'
-            checked={selectedValue === 'none'}
+            checked={dropOffSelected === 'none'}
             onChange={handleChange}
             className='mb-3'
         />

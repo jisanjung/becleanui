@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import RadioOption from './RadioOption';
 import OptionSelectionContent from './OptionSelectionContent';
+import { useStoreActions, useStoreState } from 'easy-peasy';
 
 const GlassCoatingRadio = () => {
 
-    const [selectedValue, setSelectedValue] = useState('');
+    const setGlassCoatingSelection = useStoreActions(actions => actions.setGlassCoatingSelection);
+    const glassCoatingSelected = useStoreState(state => state.glassCoatingSelected);
 
     const handleChange = (event) => {
-        setSelectedValue(event.target.value);
+        setGlassCoatingSelection(event.target.value);
     };
 
   return (
@@ -26,7 +28,7 @@ const GlassCoatingRadio = () => {
             />}
             name='glassCoating'
             value='glass_ceramic_coating'
-            checked={selectedValue === 'glass_ceramic_coating'}
+            checked={glassCoatingSelected === 'glass_ceramic_coating'}
             onChange={handleChange}
             className='mb-3'
         />
@@ -36,7 +38,7 @@ const GlassCoatingRadio = () => {
             />}
             name='glassCoating'
             value='none'
-            checked={selectedValue === 'none'}
+            checked={glassCoatingSelected === 'none'}
             onChange={handleChange}
             className='mb-3'
         />
