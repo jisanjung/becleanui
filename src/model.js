@@ -1,7 +1,7 @@
 import { action } from "easy-peasy";
 
 export const globalState = {
-    vehicleTypeSelected: 'sedan',
+    vehicleTypeSelected: null,
     glassCoatingSelected: null,
     dropOffSelected: null,
     setVehicleType: action((state, payload) => {

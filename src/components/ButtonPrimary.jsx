@@ -1,5 +1,4 @@
 import React from 'react'
-import { BECLEAN_PRIMARY_BLUE_COLOR } from '../constants';
 
 const ButtonPrimary = ({ children, className, onClick }) => {
   return (

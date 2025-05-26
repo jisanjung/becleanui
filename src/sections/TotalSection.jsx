@@ -12,13 +12,16 @@ const TotalSection = ({ className }) => {
     const glassCoatingSelected = useStoreState(state => state.glassCoatingSelected);
 
     const computePriceFromSelections = () => {
-        const vehicleTypePrice = PRICE_MAPPING[vehicleTypeSelected];
+        const vehicleTypePrice = !vehicleTypeSelected ? 0 : PRICE_MAPPING[vehicleTypeSelected];
         const glassCoatingPrice = (glassCoatingSelected === 'none' ? 0 : PRICE_MAPPING[glassCoatingSelected]) || 0;
 
         return vehicleTypePrice + glassCoatingPrice;
     };
 
     const getUrlFromSelections = () => {
+        if (!vehicleTypeSelected) {
+            return;
+        }
         if (!glassCoatingSelected || glassCoatingSelected === 'none') {
             return BOOKING_URL_MAPPING[vehicleTypeSelected];
         }
@@ -38,7 +41,7 @@ const TotalSection = ({ className }) => {
             </div>
             <div className='lg:w-2/5 lg:px-10'>
                 <ul className='mb-6 text-lg'>
-                    <li className='flex items-center'>
+                    <li className={`${!vehicleTypeSelected ? 'hidden' : 'flex'} items-center`}>
                         <TfiSpray className='mr-2'/>
                         2-layer Ceramic Coating
                     </li>
@@ -56,9 +59,12 @@ const TotalSection = ({ className }) => {
                         </span>
                     </p>
                 </div>
+                <div className='relative'>
+                    <div className={`${!getUrlFromSelections() ? 'block' : 'hidden'} absolute inset-0 bg-white opacity-60`}></div>
                     <a href={`${getUrlFromSelections()}`}>
                         <ButtonPrimary>Continue Booking</ButtonPrimary>
                     </a>
+                </div>
             </div>
         </div>
     </section>

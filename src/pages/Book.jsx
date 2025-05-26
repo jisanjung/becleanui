@@ -7,8 +7,13 @@ import InfoSection from '../sections/InfoSection'
 import FaqSection from '../sections/FaqSection'
 import '../custom.css';
 import StickyVehicleType from '../components/StickyVehicleType'
+import { useStoreState } from 'easy-peasy'
 
 const Book = () => {
+
+  const vehicleTypeSelected = useStoreState(state => state.vehicleTypeSelected);
+  const glassCoatingSelected = useStoreState(state => state.glassCoatingSelected);
+
   return (
     <main>
       <div>
@@ -19,8 +24,8 @@ const Book = () => {
           </div>
           <div className='lg:w-2/5 lg:mt-16'>
             <VehicleTypeSection className='px-4 md:px-10'/>
-            <GlassCoatingSection className='px-4 md:px-10'/>
-            <DropOffSection className='px-4 md:px-10'/>
+            <GlassCoatingSection className='px-4 md:px-10' disabled={!Boolean(vehicleTypeSelected)}/>
+            <DropOffSection className='px-4 md:px-10' disabled={!Boolean(glassCoatingSelected)}/>
           </div>
         </div>
         <TotalSection className='px-4 md:px-10'/>
