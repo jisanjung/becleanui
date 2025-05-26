@@ -188,3 +188,17 @@
 		margin: 0 auto;
 	}
 }
+
+/* small desktop descending */
+@media screen and (max-width: 1024px) {
+	.landing .container {
+		margin: 0 auto;
+	}
+}
+
+/* mobile descending */
+@media screen and (max-width: 640px) {
+	.landing .button {
+		padding: 1rem;
+	}
+}

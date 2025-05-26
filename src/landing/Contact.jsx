@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import becleanBanner from './images/beclean_banner.png';
 import './styles/contact.css';
 
 const Contact = ({ className }) => {
+
+    const [preferredContactMethod, setPreferredContactMethod] = useState('');
+
   return (
     <section id="contactSection" className={`${className}`}>
         <div className="container lg:flex lg:items-center">
@@ -17,13 +20,22 @@ const Contact = ({ className }) => {
             method="POST"
             >
             <input type="text" placeholder="Name" name="Name" className="textbox" required/>
-            <select id="contactPreference" name="Preference" className="textbox" required>
-                <option value="" disabled selected>Preferred method of contact</option>
+            <select id="contactPreference" name="Preference" className="textbox" required
+                defaultValue=''
+                onChange={(e) => setPreferredContactMethod(e.target.value)}
+            >
+                <option value="" disabled>Preferred method of contact</option>
                 <option value="Email">Email</option>
                 <option value="Phone">Phone</option>
             </select>
-            <input type="email" name="Email" placeholder="Enter Email" className="textbox none" id="textboxEmail"/>
-            <input type="tel" placeholder="Enter Phone" name="Phone" className="textbox none" id="textboxPhone"/>
+            <input type="email" name="Email" placeholder="Enter Email" required
+                className={`textbox ${preferredContactMethod === 'Email' ? 'block' : 'hidden'}`} 
+                id="textboxEmail"
+            />
+            <input type="tel" placeholder="Enter Phone" name="Phone" required
+                className={`textbox ${preferredContactMethod === 'Phone' ? 'block' : 'hidden'}`} 
+                id="textboxPhone"
+            />
             <textarea placeholder="How can we help?" name="Message" className="textbox" rows="7"></textarea>
             <button type="submit" className="button">Submit</button>
             </form>
