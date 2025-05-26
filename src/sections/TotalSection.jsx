@@ -3,8 +3,28 @@ import totalSectionCar from '../assets/total_section.png';
 import ButtonPrimary from '../components/ButtonPrimary';
 import { TfiSpray } from "react-icons/tfi";
 import { GoShieldCheck } from "react-icons/go";
+import { useStoreState } from 'easy-peasy';
+import { BOOKING_URL_MAPPING, PRICE_MAPPING } from '../constants';
 
 const TotalSection = ({ className }) => {
+
+    const vehicleTypeSelected = useStoreState(state => state.vehicleTypeSelected);
+    const glassCoatingSelected = useStoreState(state => state.glassCoatingSelected);
+
+    const computePriceFromSelections = () => {
+        const vehicleTypePrice = PRICE_MAPPING[vehicleTypeSelected];
+        const glassCoatingPrice = (glassCoatingSelected === 'none' ? 0 : PRICE_MAPPING[glassCoatingSelected]) || 0;
+
+        return vehicleTypePrice + glassCoatingPrice;
+    };
+
+    const getUrlFromSelections = () => {
+        if (!glassCoatingSelected || glassCoatingSelected === 'none') {
+            return BOOKING_URL_MAPPING[vehicleTypeSelected];
+        }
+        return BOOKING_URL_MAPPING[`${vehicleTypeSelected}+${glassCoatingSelected}`];
+    };
+
   return (
     <section className={`py-4 md:py-6 lg:py-8 bg-gray-100 ${className}`}>
         <div className='wrapper lg:flex'>
@@ -30,10 +50,15 @@ const TotalSection = ({ className }) => {
                 <div className='flex font-bold mb-4 text-lg'>
                     <p>Total:</p>
                     <p className='mx-2'>
-                        <span>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(1700)}</span>
+                        <span>
+                            {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+                            .format(computePriceFromSelections())}
+                        </span>
                     </p>
                 </div>
-                <ButtonPrimary>Continue Booking</ButtonPrimary>
+                    <a href={`${getUrlFromSelections()}`}>
+                        <ButtonPrimary>Continue Booking</ButtonPrimary>
+                    </a>
             </div>
         </div>
     </section>

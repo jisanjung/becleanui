@@ -76,3 +76,19 @@ export const FAQ_LIST = [
         answer: "After conducting extensive research, we quickly realized that a 2-layer system is required to achieve the results that we want for your car. Traditionally, ceramic coatings are applied in a 1-layer fashion. However, a 1-layer application does not have all the qualities that we are looking for. Those qualities being protection, slickness, hydrophobics, longevity, self-cleaning, and most importantly paint appearance. By using a 2-layer application, we are able to achieve the best results possible."
       },
 ];
+
+export const PRICE_MAPPING = {
+  'sedan': 1500,
+  'suv': 1700,
+  'truck': 2000,
+  'glass_ceramic_coating': 200,
+};
+
+export const BOOKING_URL_MAPPING = {
+  'sedan': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/EKQJ65KPXTG3SEYWSAP7UE4K',
+  'suv': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/KWWPFQCENTSK3EACKJYXGOVA',
+  'truck': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/4SAE3XWVRLMFYYTTLEH7V2JK',
+  'sedan+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/EKQJ65KPXTG3SEYWSAP7UE4K',
+  'suv+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/KWWPFQCENTSK3EACKJYXGOVA',
+  'truck+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/4SAE3XWVRLMFYYTTLEH7V2JK',
+};
