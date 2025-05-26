@@ -28,11 +28,11 @@ const Contact = ({ className }) => {
                 <option value="Email">Email</option>
                 <option value="Phone">Phone</option>
             </select>
-            <input type="email" name="Email" placeholder="Enter Email" required
+            <input type="email" name="Email" placeholder="Enter Email"
                 className={`textbox ${preferredContactMethod === 'Email' ? 'block' : 'hidden'}`} 
                 id="textboxEmail"
             />
-            <input type="tel" placeholder="Enter Phone" name="Phone" required
+            <input type="tel" placeholder="Enter Phone" name="Phone"
                 className={`textbox ${preferredContactMethod === 'Phone' ? 'block' : 'hidden'}`} 
                 id="textboxPhone"
             />

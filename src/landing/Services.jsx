@@ -10,7 +10,7 @@ const Services = ({ className }) => {
         <div className='container'>
             <div className="service-each">
             <div className="service-details">
-                <h2 className="title-md">Exterior Detail</h2>
+                <h2 className="title-md">Ceramic Coating</h2>
                 <p className="text service-desc">
                 Transform your car into a masterpiece with our exceptional exterior detail. 
                 Our skilled technicians scrupulously cleanse every inch to remove dirt, grime, and road contaminants. 
@@ -19,8 +19,7 @@ const Services = ({ className }) => {
                 Trust us to unveil the true elegance of your vehicle.
                 </p>
                 <div className="flex w-100">
-                <a href="#pricingSection" className="button">Learn More</a>
-                <a href="#contactSection" className="button">Book Now</a>
+                    <a href="/book" className="button">Book Now</a>
                 </div>
             </div>
             <div className="service-img">
@@ -29,7 +28,7 @@ const Services = ({ className }) => {
             </div>
             <div className="service-each service-each-reverse row-reverse">
             <div className="service-details">
-                <h2 className="title-md text-right">Interior Detail</h2>
+                <h2 className="title-md text-right">Glass Coating</h2>
                 <p className="text service-desc text-right">
                 Step into luxury with our premier car interior detail service. 
                 Our meticulous team goes beyond to restore your vehicle's interior to showroom perfection. 
@@ -38,8 +37,7 @@ const Services = ({ className }) => {
                 Experience the pinnacle of automotive pampering with our comprehensive interior detailing.
                 </p>
                 <div className="flex justify-end">
-                <a href="#pricingSection" className="button">Learn More</a>
-                <a href="#contactSection" className="button">Book Now</a>
+                    <a href="/book" className="button">Book Now</a>
                 </div>
             </div>
             <div className="service-img service-img-reverse">
@@ -48,7 +46,7 @@ const Services = ({ className }) => {
             </div>
             <div className="service-each">
             <div className="service-details">
-                <h2 className="title-md">Detail Package</h2>
+                <h2 className="title-md">Free Delivery</h2>
                 <p className="text service-desc">
                 Indulge in the epitome of automotive luxury with The Detail Package. 
                 From the intricacies of the interior upholstery to the radiant shine of the exterior paint, our skilled team employs cutting-edge techniques and products to ensure a flawless finish. 
@@ -56,8 +54,7 @@ const Services = ({ className }) => {
                 With our detail service, your car becomes a statement of sophistication.
                 </p>
                 <div className="flex">
-                <a href="#pricingSection" className="button">Learn More</a>
-                <a href="#contactSection" className="button">Book Now</a>
+                    <a href="/book" className="button">Book Now</a>
                 </div>
             </div>
             <div className="service-img">

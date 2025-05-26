@@ -13,8 +13,8 @@ const Hero = ({ className }) => {
             <h1 className="title-md">The Finest Detail</h1>
             <p className="text">Unveil the Beauty of Your Vehicle With Our Mobile Detailing Services.</p>
             <div id="heroButtons" className="flex">
-              <a href="#pricingSection" className="button">Learn More</a>
-              <a href="#contactSection" className="button">Book Now</a>
+              <a href="#servicesSection" className="button">Learn More</a>
+              <a href="/book" className="button">Book Now</a>
             </div>
           </div>
         </div>
