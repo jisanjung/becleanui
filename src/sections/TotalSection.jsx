@@ -60,7 +60,7 @@ const TotalSection = ({ className }) => {
                     </p>
                 </div>
                 <div className='relative'>
-                    <div className={`${!getUrlFromSelections() ? 'block' : 'hidden'} absolute inset-0 bg-white opacity-60`}></div>
+                    <div className={`${!getUrlFromSelections() ? 'block cursor-not-allowed' : 'hidden'} absolute inset-0 bg-gray-100 opacity-60`}></div>
                     <a href={`${getUrlFromSelections()}`}>
                         <ButtonPrimary>Continue Booking</ButtonPrimary>
                     </a>

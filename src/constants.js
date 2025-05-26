@@ -88,7 +88,7 @@ export const BOOKING_URL_MAPPING = {
   'sedan': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/EKQJ65KPXTG3SEYWSAP7UE4K',
   'suv': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/KWWPFQCENTSK3EACKJYXGOVA',
   'truck': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/4SAE3XWVRLMFYYTTLEH7V2JK',
-  'sedan+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/EKQJ65KPXTG3SEYWSAP7UE4K',
-  'suv+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/KWWPFQCENTSK3EACKJYXGOVA',
-  'truck+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/4SAE3XWVRLMFYYTTLEH7V2JK',
+  'sedan+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/UJZRFRLVAXFOEVQPGRYSKA26',
+  'suv+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/LHZT4WN2WHU4QBI2QFD752T5',
+  'truck+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/65HF5GZLGA36LOS53D53I4II',
 };
