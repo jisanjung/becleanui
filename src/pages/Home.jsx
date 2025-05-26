@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../landing/Hero'
 
 const Home = () => {
   return (
-    <main>
-        beclean home
+    <main id='landing'>
+        <Hero/>
     </main>
   )
 }
