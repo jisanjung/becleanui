@@ -1,66 +1,66 @@
 /* css resets */
-#landing :root {
+.landing :root {
 	--dark-gray: #363434;
 	--sky-blue: #43BDD5;
 	--white: #fff;
 	--black: #000;
 	--light-gray: #F5F5F7;
 }
-#landing * {
+.landing * {
 	box-sizing: border-box;
 }
 
-#landing body {
+.landing body {
 	line-height: 1;
 	font-family: Arial, Helvetica, sans-serif;
 }
-#landing ol, #landing ul {
+.landing ol, .landing ul {
 	list-style: none;
 }
-#landing blockquote, #landing q {
+.landing blockquote, .landing q {
 	quotes: none;
 }
 
-#landing table {
+.landing table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-#landing a {
+.landing a {
 	text-decoration: none;
 }
-#landing img {
+.landing img {
 	width: 100%;
 }
-#landing button {
+.landing button {
 	background: transparent;
 	border: 0;
 	cursor: pointer;
 }
-#landing .flex {
+.landing .flex {
 	display: flex;
 }
-#landing .none {
+.landing .none {
 	display: none;
 }
-#landing .justify-center {
+.landing .justify-center {
 	justify-content: center;
 }
-#landing .justify-end {
+.landing .justify-end {
 	justify-content: end;
 }
-#landing .space-between {
+.landing .space-between {
 	justify-content: space-between;
 }
-#landing .items-center {
+.landing .items-center {
 	align-items: center;
 }
-#landing .row-reverse {
+.landing .row-reverse {
 	flex-direction: row-reverse;
 }
-#landing .container {
+.landing .container {
 	padding: 0 1rem;
 }
-#landing .tint {
+.landing .tint {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -68,121 +68,121 @@
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.65);
 }
-#landing .w-100 {
+.landing .w-100 {
 	width: 100%;
 }
-#landing .h-100 {
+.landing .h-100 {
 	height: 100%;
 }
-#landing .vh-100 {
+.landing .vh-100 {
 	height: 100vh;
 }
-#landing .relative {
+.landing .relative {
 	position: relative;
 }
-#landing .absolute {
+.landing .absolute {
 	position: absolute;
 }
-#landing .block {
+.landing .block {
 	display: block;
 }
-#landing .inline-block {
+.landing .inline-block {
 	display: inline-block;
 }
-#landing .center-y {
+.landing .center-y {
 	top: 50%;
 	transform: translateY(-50%);
 }
-#landing .center-x {
+.landing .center-x {
 	left: 50%;
 	transform: translateX(-50%);
 }
-#landing .center-all {
+.landing .center-all {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-#landing .object-cover {
+.landing .object-cover {
 	object-fit: cover;
 }
-#landing .title-lg {
+.landing .title-lg {
 	font-weight: bold;
 	font-size: 96px;
 	line-height: 1.25;
 }
-#landing .title-md {
+.landing .title-md {
 	font-weight: bold;
 	font-size: 64px;
 	line-height: 1.25;
 }
-#landing .title-sm {
+.landing .title-sm {
 	font-weight: bold;
 	font-size: 48px;
 	line-height: 1.15;
 }
-#landing .title-xs {
+.landing .title-xs {
 	font-weight: bold;
 	font-size: 32px;
 	line-height: 1.05;
 }
-#landing .text {
+.landing .text {
 	font-size: 20px;
 	line-height: 1.25;
 }
-#landing .text-md {
+.landing .text-md {
 	font-size: 20px;
 	line-height: 1.25;
 }
-#landing .button {
+.landing .button {
 	padding: 1rem 2.5rem;
 	color: white;
 	background: #43BDD5;
 	border-radius: 10px;
 	font-size: 16px;
 }
-#landing .button:hover {
+.landing .button:hover {
 	cursor: pointer;
 	background-color: #369fb4;
 }
-#landing .text-right {
+.landing .text-right {
 	text-align: right;
 }
-#landing .text-center {
+.landing .text-center {
 	text-align: center;
 }
-#landing .textbox {
+.landing .textbox {
 	width: 100%;
 	padding: 1rem;
 	border-radius: 10px;
 	border: 1px solid #9E9E9E;
 	font-size: 18px;
 }
-#landing select:required:invalid {
+.landing select:required:invalid {
 	color: gray;
 }
-#landing option {
+.landing option {
 	color: black;
 }
-#landing textarea::placeholder {
+.landing textarea::placeholder {
 	font-family: Arial, Helvetica, sans-serif;
 }
-#landing .mb1 {
+.landing .mb1 {
 	margin-bottom: 1rem;
 }
-#landing .mb2 {
+.landing .mb2 {
 	margin-bottom: 2rem;
 }
 
 /* ipad view */
 @media screen and (min-width: 768px) {
-	#landing .container {
+	.landing .container {
 		padding: 0 10%;
 	}
 }
 
 /* large desktop view */
 @media screen and (min-width: 1200px) {
-	#landing .container {
+	.landing .container {
 		width: 1000px;
 		padding: 0;
 		margin: 0 auto;

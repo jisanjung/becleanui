@@ -3,9 +3,9 @@ import './styles/global.css';
 import './styles/home.css';
 import heroImage from './images/home_section.jpeg';
 
-const Hero = () => {
+const Hero = ({ className }) => {
   return (
-    <section id="homeSection">
+    <section id="homeSection" className={`${className}`}>
         <img src={heroImage} alt="Guy cleaning car" className="h-100 object-cover"/>
         <div className="tint"></div>
         <div id="homeHero" className="absolute center-y">
