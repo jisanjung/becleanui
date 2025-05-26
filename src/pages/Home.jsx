@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Hero from '../landing/Hero'
 import Services from '../landing/Services'
 import { useLocation } from 'react-router-dom'
+import Contact from '../landing/Contact'
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
     <main>
         <Hero className='landing'/>
         <Services className='landing'/>
+        <Contact className='landing'/>
     </main>
   )
 }
