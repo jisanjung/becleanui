@@ -26,7 +26,7 @@ const StickyVehicleType = ({ className }) => {
       <div className='flex justify-center lg:items-center lg:h-full'>
         <div className='mb-4 w-80 sm:w-96 h-40 lg:w-full lg:h-full lg:mt-8 relative'>
           <img src={getVehicleImageBasedOnSelection()} alt='Sedan 1' className='w-full h-full object-cover'/>
-          <div className='absolute lg:h-8 w-full bg-white bottom-0'></div>
+          <div className='absolute lg:h-10 w-full bg-white bottom-0'></div>
         </div>
       </div>
     </div>
