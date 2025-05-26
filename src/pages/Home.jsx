@@ -3,6 +3,7 @@ import Hero from '../landing/Hero'
 import Services from '../landing/Services'
 import { useLocation } from 'react-router-dom'
 import Contact from '../landing/Contact'
+import OurStory from '../landing/OurStory'
 
 const Home = () => {
 
@@ -23,6 +24,7 @@ const Home = () => {
         <Hero className='landing'/>
         <Services className='landing'/>
         <Contact className='landing'/>
+        <OurStory className='landing'/>
     </main>
   )
 }
