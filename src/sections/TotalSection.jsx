@@ -42,7 +42,7 @@ const TotalSection = ({ className }) => {
                         <TfiSpray className='mr-2'/>
                         2-layer Ceramic Coating
                     </li>
-                    <li className='flex items-center'>
+                    <li className={`${!glassCoatingSelected || glassCoatingSelected === 'none' ? 'hidden' : 'flex'} items-center`}>
                         <GoShieldCheck className='mr-2'/>
                         Glass Ceramic Coating
                     </li>

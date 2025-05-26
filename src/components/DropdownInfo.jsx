@@ -16,8 +16,8 @@ const DropdownInfo = ({ title, description }) => {
       <div className='flex justify-between items-center'
         onClick={() => setOpenDropdown(!openDropdown)}
       >
-        <p className='font-bold'>{title}</p>
-        <button>
+        <p className='font-bold hover:cursor-pointer'>{title}</p>
+        <button className='hover:cursor-pointer'>
           <IoChevronDownSharp className='text-3xl transition-all'
             style={{
               transform: openDropdown ? 'rotate(180deg)' : 'none'
