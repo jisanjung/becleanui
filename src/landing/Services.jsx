@@ -12,11 +12,11 @@ const Services = ({ className }) => {
             <div className="service-details">
                 <h2 className="title-md">Ceramic Coating</h2>
                 <p className="text service-desc">
-                Transform your car into a masterpiece with our exceptional exterior detail. 
-                Our skilled technicians scrupulously cleanse every inch to remove dirt, grime, and road contaminants. 
-                We pamper your car with a thick foam shampoo followed by a gentle hand wash. 
-                We specially utilize a ceramic-infused coating to give your vehicle a brilliant shine and apply a graphene acrylic tire shine for extra longevity. 
-                Trust us to unveil the true elegance of your vehicle.
+                    Our ceramic coating services are designed to protect your vehicle while enhancing its appearance with a deep, 
+                    lasting gloss. We specialize in a meticulous, multi-stage process using a 2-layer ceramic coating system to 
+                    ensure long-term durability, hydrophobic performance, and a mirror-like finish. Each coating is applied in 
+                    a controlled studio environment and includes complimentary delivery and a signature aftercare kit, 
+                    so your vehicle stays protected long after it leaves our hands.
                 </p>
                 <div className="flex w-100">
                     <a href="/book" className="button">Book Now</a>
@@ -30,11 +30,12 @@ const Services = ({ className }) => {
             <div className="service-details">
                 <h2 className="title-md text-right">Glass Coating</h2>
                 <p className="text service-desc text-right">
-                Step into luxury with our premier car interior detail service. 
-                Our meticulous team goes beyond to restore your vehicle's interior to showroom perfection. 
-                From deep cleaning carpets and upholstery to exceptional window glass quality with our Streak-Free Guarantee, every inch is treated with care. 
-                We eliminate odors, banish stains, and renew the luster of your dashboard and trim. 
-                Experience the pinnacle of automotive pampering with our comprehensive interior detailing.
+                    Our specialized ceramic window coating provides an extra layer of clarity, protection, and performance for 
+                    all exterior glass surfaces. Designed to repel water, dirt, ice, and road grime. This coating significantly 
+                    improves visibility in rain and harsh weather conditions. It also reduces glare, makes cleaning easier, and 
+                    helps prevent mineral stains from etching into the glass over time. 
+                    Applied with the same precision as our paint coatings, it’s a smart, lasting upgrade that enhances both safety 
+                    and aesthetics.
                 </p>
                 <div className="flex justify-end">
                     <a href="/book" className="button">Book Now</a>
@@ -48,10 +49,12 @@ const Services = ({ className }) => {
             <div className="service-details">
                 <h2 className="title-md">Free Delivery</h2>
                 <p className="text service-desc">
-                Indulge in the epitome of automotive luxury with The Detail Package. 
-                From the intricacies of the interior upholstery to the radiant shine of the exterior paint, our skilled team employs cutting-edge techniques and products to ensure a flawless finish. 
-                Unveil a spotless interior where every surface exudes freshness, while the exterior boasts a mirror-like gloss. 
-                With our detail service, your car becomes a statement of sophistication.
+                    We offer free vehicle delivery because we believe a premium service should extend beyond the coating itself. 
+                    From the moment your vehicle enters our studio, it's treated with the highest level of care. It is cleaned, 
+                    decontaminated, corrected, and coated to perfection. Once the process is complete and the coating has cured in 
+                    our controlled environment, we deliver your vehicle directly back to you. No waiting rooms, no hassle. 
+                    Just a seamless, white-glove experience that saves you time while ensuring your vehicle arrives protected, 
+                    polished, and ready to leave impressions.
                 </p>
                 <div className="flex">
                     <a href="/book" className="button">Book Now</a>
