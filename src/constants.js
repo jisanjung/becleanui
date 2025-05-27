@@ -1,5 +1,5 @@
 export const HEADER_BACKGROUND_COLOR = '#363434';
-export const BECLEAN_PRIMARY_BLUE_COLOR = '#43BDD5';
+export const beclean_PRIMARY_BLUE_COLOR = '#43BDD5';
 export const FOOTER_BACKGROUND_COLOR = '#F5F5F7';
 
 export const FAQ_LIST = [
@@ -9,7 +9,7 @@ export const FAQ_LIST = [
       },
       {
         question: "Why do I need a ceramic coating?",
-        answer: "At BeClean, we strongly believe that every vehicle must have a ceramic coating. That includes every vehicle from your average daily driver to a exotic cars displayed at car shows. Our reason for such strong beliefs? It’s because we desire for everyone to be able to both protect their vehicles while falling in love with how they look. Not only will a ceramic coating provide protection to your car's paint, you will stand out from the rest of the cars on the road."
+        answer: "At beclean, we strongly believe that every vehicle must have a ceramic coating. That includes every vehicle from your average daily driver to a exotic cars displayed at car shows. Our reason for such strong beliefs? It’s because we desire for everyone to be able to both protect their vehicles while falling in love with how they look. Not only will a ceramic coating provide protection to your car's paint, you will stand out from the rest of the cars on the road."
       },
       {
         question: "How long does your ceramic coating last?",
@@ -24,8 +24,8 @@ export const FAQ_LIST = [
         answer: "During the day of the appointment, simply drop-off your vehicle and our coating technicians will begin the ceramic coating process. The entire coating process will take more than 8 hours, from the decontamination wash all the way to the curing process. Please have transportation arranged once you drop off your car."
       },
       {
-        question: "What does BeClean do to ensure quality control and is there a warranty?",
-        answer: "We have multiple checks during the process to promote coating adhesion and coating curing. This includes multiple leveling steps to ensure that every inch of your car’s paint is covered. Once the coating is cured, we do a final check before you receive your car back to guarantee proper coating application.\n\nAs for warranties, BeClean has a 1 year coating satisfaction guarantee. If you like to learn more about the terms and conditions of this warranty please visit our warranty page."
+        question: "What does beclean do to ensure quality control and is there a warranty?",
+        answer: "We have multiple checks during the process to promote coating adhesion and coating curing. This includes multiple leveling steps to ensure that every inch of your car’s paint is covered. Once the coating is cured, we do a final check before you receive your car back to guarantee proper coating application.\n\nAs for warranties, beclean has a 1 year coating satisfaction guarantee. If you like to learn more about the terms and conditions of this warranty please visit our warranty page."
       },
       {
         question: "How long does it take to ceramic coat a car from start to finish?",
@@ -52,11 +52,11 @@ export const FAQ_LIST = [
         answer: "Absolutely! During the paint enhancement portion of the coating, not only will we revive your car’s paint leading to higher gloss, we will remove all micro scratches and reduce visibility of deep scratches."
       },
       {
-        question: "Does BeClean offer discounts?",
+        question: "Does beclean offer discounts?",
         answer: "Unfortunately we do not offer discounts for our services. Our coating process is highly meticulous and requires a high degree of specialty. This is required so we can provide you the care you deserve. Any discounts will cause us to deliver an inferior service."
       },
       {
-        question: "What happens during a BeClean ceramic coating?",
+        question: "What happens during a beclean ceramic coating?",
         answer: "Once we receive your car, we start with a decontamination wash which includes a mechanical and chemical decontamination. After the car is dried, we begin the paint enhancement portion where we polish the vehicle. This process not only brings a brilliant shine, it also removes scratches from your paint. Next, we apply a dedicated ceramic coating prep and apply the first layer of ceramic coating. After the first layer, we apply a second layer of ceramic coating which not only enhances the appearances but adds another layer of protection. Once the 2 layers of coating are applied, the car is required to cure for 8 hours before being driven. This process is critical for proper coating adhesion since the car can not be exposed to the elements within those 8 hours, otherwise the coating will fail prematurely."
       },
       {
@@ -64,8 +64,8 @@ export const FAQ_LIST = [
         answer: "Of course! If something comes up to where you need to reschedule, simply go back to the appointment confirmation and you can select a time that works best for you."
       },
       {
-        question: "Why should I use BeClean for a ceramic coating?",
-        answer: "At BeClean we specialize in ceramic coatings. While other detailers and shops might do multiple services such as paint protection film (PPF), tinting, dent removal, general detailing, and more. We focus only on ceramic coatings making us highly knowledgeable on ceramic coatings and how to properly perform the service. This specialization helps us to devise the best possible coating process that increases proper coating longevity, performance, and quality control.\n\nNot only do we specialize in coatings, we have an ideal climate controlled environment that is required for proper coating curing, critical to making the coating last as long as possible.\n\nIf that is not enough, we only service 1 car a day. This means that you have our full, undivided attention that you and your car need during the coating process. Why settle for anything less than the attention that you need."
+        question: "Why should I use beclean for a ceramic coating?",
+        answer: "At beclean we specialize in ceramic coatings. While other detailers and shops might do multiple services such as paint protection film (PPF), tinting, dent removal, general detailing, and more. We focus only on ceramic coatings making us highly knowledgeable on ceramic coatings and how to properly perform the service. This specialization helps us to devise the best possible coating process that increases proper coating longevity, performance, and quality control.\n\nNot only do we specialize in coatings, we have an ideal climate controlled environment that is required for proper coating curing, critical to making the coating last as long as possible.\n\nIf that is not enough, we only service 1 car a day. This means that you have our full, undivided attention that you and your car need during the coating process. Why settle for anything less than the attention that you need."
       },
       {
         question: "What ceramic coating do you use?",
