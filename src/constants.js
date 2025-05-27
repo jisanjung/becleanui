@@ -1,5 +1,5 @@
 export const HEADER_BACKGROUND_COLOR = '#363434';
-export const beclean_PRIMARY_BLUE_COLOR = '#43BDD5';
+export const BECLEAN_PRIMARY_BLUE_COLOR = '#43BDD5';
 export const FOOTER_BACKGROUND_COLOR = '#F5F5F7';
 
 export const FAQ_LIST = [
