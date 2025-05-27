@@ -1,10 +1,13 @@
 import React from 'react'
-import totalSectionCar from '../assets/total_section.png';
+import sedanGrayZone from '../assets/sedan_gray_zone.png';
+import suvGrayZone from '../assets/suv_gray_zone.png';
+import truckGrayZone from '../assets/truck_gray_zone.png';
 import ButtonPrimary from '../components/ButtonPrimary';
 import { TfiSpray } from "react-icons/tfi";
 import { GoShieldCheck } from "react-icons/go";
 import { useStoreState } from 'easy-peasy';
 import { BOOKING_URL_MAPPING, PRICE_MAPPING } from '../constants';
+import { getVehicleImageBasedOnSelection } from '../utils';
 
 const TotalSection = ({ className }) => {
 
@@ -28,6 +31,12 @@ const TotalSection = ({ className }) => {
         return BOOKING_URL_MAPPING[`${vehicleTypeSelected}+${glassCoatingSelected}`];
     };
 
+    const vehicleImage = getVehicleImageBasedOnSelection(vehicleTypeSelected, {
+        sedan: sedanGrayZone,
+        suv: suvGrayZone,
+        truck: truckGrayZone,
+    });
+
   return (
     <section className={`py-4 md:py-6 lg:py-8 bg-gray-100 ${className}`}>
         <div className='wrapper lg:flex'>
@@ -35,7 +44,7 @@ const TotalSection = ({ className }) => {
                 <h1 className='font-bold text-4xl mb-4'>Your ceramic coating. <span className='text-gray-500'>The Way You Want It.</span></h1>
                 <div className='flex justify-center'>
                     <div className='w-80 sm:w-96 h-48 my-8'>
-                        <img src={totalSectionCar} alt='Display Car' className='w-full h-full object-cover'/>
+                        <img src={vehicleImage} alt='Display Car' className='w-full h-full object-cover'/>
                     </div>
                 </div>
             </div>
