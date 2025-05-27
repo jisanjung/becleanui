@@ -20,13 +20,13 @@ const Footer = () => {
             </div>
             <div>
                 <div className='flex justify-center lg:justify-end items-end mb-6'>
-                    <a href='https://www.linkedin.com/company/becleancars/'>
+                    <a href='https://www.linkedin.com/company/becleancars/' target="_blank" rel="noopener noreferrer">
                         <FaLinkedinIn className='text-3xl mr-4'/>
                     </a>
-                    <a href='https://www.facebook.com/BeCleanCars?mibextid=LQQJ4d'>
+                    <a href='https://www.facebook.com/becleanceramics' target="_blank" rel="noopener noreferrer">
                         <TfiFacebook className='text-3xl mr-4'/>
                     </a>
-                    <a href='https://www.instagram.com/becleancars?igsh=cTFxcHRnMTVsMDZh'>
+                    <a href='https://www.instagram.com/becleanceramics/' target="_blank" rel="noopener noreferrer">
                         <FaInstagram className='text-3xl mr-4 lg:mr-0'/>
                     </a>
                 </div>
