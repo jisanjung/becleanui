@@ -16,7 +16,7 @@ const DropOffRadio = () => {
     <div>
         <RadioOption
             label={<OptionSelectionContent 
-                title='Drop-Off'
+                title='Delivery'
                 price='Free'
                 description={
                     <p className='mt-4 w-4/5'>
@@ -33,7 +33,7 @@ const DropOffRadio = () => {
         />
         <RadioOption
             label={<OptionSelectionContent 
-                title='No Drop-Off'
+                title='No Delivery'
             />}
             name='dropOff'
             value='none'
