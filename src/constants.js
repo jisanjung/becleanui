@@ -1,3 +1,5 @@
+// File to edit content, colors. etc.
+
 export const HEADER_BACKGROUND_COLOR = '#363434';
 export const BECLEAN_PRIMARY_BLUE_COLOR = '#43BDD5';
 export const FOOTER_BACKGROUND_COLOR = '#F5F5F7';
@@ -91,4 +93,8 @@ export const BOOKING_URL_MAPPING = {
   'sedan+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/UJZRFRLVAXFOEVQPGRYSKA26',
   'suv+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/LHZT4WN2WHU4QBI2QFD752T5',
   'truck+glass_ceramic_coating': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/65HF5GZLGA36LOS53D53I4II',
+};
+
+export const incentives = {
+  checkout_discount: 250, // TODO: remove this, or set to 0 later when needed
 };
