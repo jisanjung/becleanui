@@ -1,4 +1,5 @@
-# beclean
+# [DEPRECATED] beclean
+**This repo is no longer maintained. See new app here: https://github.com/jisanjung/becleannext**
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
